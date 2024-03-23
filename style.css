@@ -1,0 +1,594 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .main {
+        width: 100%;
+    }
+
+    .nav ul {
+        margin-block: 0;
+        padding: 0;
+    }
+
+    * {
+        flex-direction: column;
+    }
+
+    .nav {
+        flex-direction: row;
+    }
+        /**/
+        .form-popup{
+            width: 80%;
+            
+        }
+        .form-box .details{
+            display: none;
+        }
+        .form-box .form-content{
+            width: 80%;
+           
+        }
+        form button{
+            flex-direction: row;
+        }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .main {
+        width: 100%;
+    }
+
+    .nav ul {
+        margin-block: 0;
+        padding: 0;
+    }
+
+    * {
+        flex-direction: column;
+    }
+
+    .nav {
+        flex-direction: row;
+
+
+    }
+   /**/
+
+            .form-popup{
+                width: 100%;
+            }
+            .form-box .form-content{
+                width: 100%;
+               
+            }
+            .details{
+                display: flex;
+            }
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .main {
+        width: 100%;
+    }
+
+    * {
+        flex-direction: row;
+    }
+
+    .nav {
+        flex-direction: row;
+
+    }
+    /**/
+    .form-popup{
+        width: 100%;
+    }
+    .form-box .form-content{
+        width: 100%;
+       
+    }
+    .details{
+        display: flex;
+    }
+
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .main {
+        width: 100%;
+    }
+
+    * {
+        flex-direction: row;
+    }
+
+    .nav {
+        flex-direction: row;
+
+    }
+    /**/
+    .form-popup{
+        width: 100%;
+    }
+    .form-box .form-content{
+        width: 100%;
+       
+    }
+    .details{
+        display: flex;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .main {
+        width: 100%;
+    }
+
+    * {
+        flex-direction: row;
+    }
+
+    .nav {
+        flex-direction: row;
+
+    }
+    /**/
+    .form-popup{
+        width: 100%;
+    }
+    .form-box .form-content{
+        width: 100;
+       
+    }
+
+}
+
+* {
+    font-family: "Cairo", sans-serif;
+}
+/*****/
+.bodyall {
+    background-image: url('background.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.89);
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+
+
+.header {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    margin: 4px 5px 0 0;
+
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+}
+
+
+
+
+.nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.nav ul li a {
+    display: block;
+    height: 20px;
+    width: auto;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav ul li a:before {
+    content: attr(text);
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #3566c9;
+    transform: rotateX(-270deg);
+    transform-origin: top;
+    transition: 0.8s;
+
+}
+
+.nav ul li a:hover:before {
+    transform: rotateX(0deg);
+    color: #3566c9;
+}
+
+.logoImg {
+    display: flex;
+
+    align-items: end;
+}
+
+.logoImg img {
+
+    width: 70%;
+    height: 60%;
+    flex: 1;
+    padding: 2%;
+
+
+
+
+
+
+}
+
+.contant {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+
+}
+
+.sec1 {
+
+    flex: 1;
+
+}
+
+
+
+.sec2 {
+    display: flex;
+
+    flex: 1;
+    align-items: center;
+    gap: 15px;
+    top: 50%;
+    width: 100%;
+    flex-wrap: wrap;
+
+
+}
+
+
+.card {
+    width: 35vmin;
+    height: 35vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    position: relative;
+    border-radius: 0.5em;
+    flex: 1;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 170px;
+
+}
+
+.card h3 {
+    color: aliceblue;
+}
+
+.c1 {
+    background-color: #e48bb4;
+    border-bottom: 10px solid #e7a8c5;
+}
+
+.c2 {
+    background-color: #e8d480;
+    border-bottom: 10px solid #e8dcae;
+}
+
+.c3 {
+    background-color: #5c78b5;
+    border-bottom: 10px solid #7f94d3;
+}
+
+
+.pic {
+    width: 50%;
+
+}
+
+.clarification {
+    font-size: 15px;
+    text-align: center;
+}
+
+.footer {
+    direction: ltr;
+
+}
+
+.footer span {
+    color: #3566c9;
+}
+
+.footer p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+.line {
+    display: block;
+    width: 70%;
+}
+
+.contAbutUs {
+    text-align: center;
+}
+
+/* About us*/
+
+.grop img {
+    width: 10%;
+    box-shadow: 5px 5px #3566c9;
+}
+
+.grop h5 {
+    color: #3566c9;
+    font-weight: bold;
+    font-size: 14px;
+
+
+}
+
+#job {
+    color: #c8a2b6;
+}
+
+.gropSec {
+    text-align: center;
+    color: #3566c9;
+}
+
+.gropSec p {
+    text-align: center;
+}
+
+/*sign in*/
+.main_signIn {
+    height: 100vh;
+    width: 100%; 
+    background-image: url('pharmacy3.jfif')  ;
+    background-size: cover;
+    
+    
+
+}
+
+.form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 720px;
+    background-color:rgba(255, 255, 255, 0.7);
+    border: 2px solid #111010;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.form-popup .form-box {
+    display: flex;
+}
+
+.form-box .details {
+    max-width: 330px;
+    flex-direction: column;
+    align-items:center;
+    justify-content:end;
+    width: 100%; 
+    background-image: url('1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color:#3566c9;
+    
+    
+}
+.details h3{
+    color: #139b8c;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-box .form-content {   
+    padding: 35px;
+   
+}
+
+form .input-field {
+    height: 50%;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+form .input-field input {
+    width: 100%;
+    height: 100%;
+    font-size: 0.95rem;
+    position: 0 15px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+form .input-field label {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    color: #5c78b5;
+    pointer-events: none;
+    transform: translateY(-15%);
+    transition: 0.2s ease;
+}
+
+.input-field input:focus {
+    border-color: black;
+}
+
+.input-field input:is(:focus, :valid) {
+    padding: 21px 23px 0;
+
+}
+
+.input-field input:is(:focus, :valid)~label {
+    color:black;
+    font-size: 0.75rem;
+    transform: translateY(20%);
+}
+
+.form-box a {
+    color: #02060f;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.form-box a:hover {
+    text-decoration: underline;
+
+}
+
+.Entry, .nafath{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    align-self: center;
+    
+    border-radius: 3%;
+    
+    color: white;
+    cursor: pointer;
+
+}
+
+.Entry{
+    padding: 10px 0;
+    margin: 18px 0;
+    background:#5c78b5;
+}
+.nafath{
+    padding: 10px 0;
+    margin:  0;
+    flex-direction: row;
+    background: #139b8c;
+}
+form button:hover {
+    background: #717cf6;
+}
+
+.form-box .button-link {
+    text-align: center;
+
+}
+.note{
+    color: red;
+    font-size: 12px;
+}
+/*medicine*/
+
+.allfirst-medi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+
+}
+.firstMedi{
+    flex:3;
+    text-align: center;
+
+}
+.doctor{
+    flex:1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.doctor img{
+width: 70%;
+
+flex: 1;
+}
+
+
+.first-medi-img img{
+    width:20% ;
+    height:50% ;
+    padding: 5px;
+}
+
+.tabel{
+    background-color: whitesmoke;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-weight: bold;
+    font-size: 0.9em;
+    min-width: 400px;
+   
+
+}
+
+.tabel tr,.tabel td{
+    margin: 3px;
+    border: #111010;
+}
+
+
+
