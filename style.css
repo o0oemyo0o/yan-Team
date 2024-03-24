@@ -31,6 +31,21 @@
         form button{
             flex-direction: row;
         }
+        /**/
+        
+        .doctor{
+            display: none;
+        }
+        .doctor2{
+            display: block;
+            align-items: center;
+            
+        }
+        .allfirst-medi{
+            flex-direction: column;
+        }
+
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -65,7 +80,10 @@
             .details{
                 display: flex;
             }
-
+/**/
+.doctor{
+    display: flex;
+}
 
 }
 
@@ -94,6 +112,10 @@
     .details{
         display: flex;
     }
+    /**/
+.doctor{
+    display: flex;
+}
 
 
 
@@ -124,6 +146,10 @@
     .details{
         display: flex;
     }
+    /**/
+.doctor{
+    display: flex;
+}
 
 }
 
@@ -149,6 +175,10 @@
         width: 100;
        
     }
+    /**/
+.doctor{
+    display: flex;
+}
 
 }
 
@@ -392,7 +422,7 @@
 .main_signIn {
     height: 100vh;
     width: 100%; 
-    background-image: url('pharmacy3.jfif')  ;
+    background-image: url('pharmacy2.png')  ;
     background-size: cover;
     
     
@@ -540,6 +570,7 @@ form button:hover {
 }
 /*medicine*/
 
+
 .allfirst-medi{
     display: flex;
     justify-content: center;
@@ -547,6 +578,7 @@ form button:hover {
     flex-direction: row;
     margin: 0;
     padding: 0;
+    font-size: 0.95rem;
 
 }
 .firstMedi{
@@ -557,13 +589,11 @@ form button:hover {
 .doctor{
     flex:1;
     align-items: center;
-    display: flex;
     flex-direction: column;
     
 }
-.doctor img{
+.doctor img,.doctor2 img{
 width: 70%;
-
 flex: 1;
 }
 
@@ -579,16 +609,26 @@ flex: 1;
     border-collapse: collapse;
     margin: 25px 0;
     font-weight: bold;
-    font-size: 0.9em;
-    min-width: 400px;
-   
-
+    display: flex;
+    border-radius: 5px 5px 0 0;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 5px;
+    
 }
 
-.tabel tr,.tabel td{
-    margin: 3px;
-    border: #111010;
+.tabel td{
+padding: 12px 15px;
 }
+
+.tabel tr{
+    border-bottom: #dddd 1px solid;
+}
+
+.tabel tr:last-of-type{
+    border-bottom: #dddd 2px solid;
+}
+
 
 
 
