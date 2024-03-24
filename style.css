@@ -318,6 +318,10 @@
 
 }
 
+.sec2 a{
+    text-decoration: none;
+}
+
 
 .card {
     width: 35vmin;
